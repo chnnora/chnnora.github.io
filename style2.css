@@ -1,0 +1,97 @@
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: gray;text-align: center;
+        color: #333;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.profile-header {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    background-color: white;
+    color: #333;
+    margin: 10px 0;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.1s ease; /* Add transition for smooth effect */
+}
+
+.link-list li:active {
+    transform: translateY(4px); /* Moves the button down */
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Adjusts the shadow for a pressed effect */
+}
+
+
+.link-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        margin-top:20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .link-list li {
+        padding: 15px 20px;
+    }
+
+    .link-list li a {
+        font-size: 16px;
+    }
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;      /* Old versions of Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently supported by Chrome, Opera, and Firefox */
+}
