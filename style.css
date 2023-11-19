@@ -1,9 +1,9 @@
-
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);    text-align: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    text-align: center;
     color: #333;
 }
 
@@ -42,18 +42,21 @@ h1 {
 .link-list li {
     background-color: white;
     color: #333;
-    margin: 10px 0;
+    margin: 20px 0; /* Keeps the space between items */
     padding: 15px 30px;
     border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: all 0.1s ease; /* Add transition for smooth effect */
+    transition: all 0.1s ease;
+    box-shadow: 0 10px 0 black; /* Thicker solid black shadow */
+
 }
+
+
+
 
 .link-list li:active {
-    transform: translateY(4px); /* Moves the button down */
-    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Adjusts the shadow for a pressed effect */
+    transform: translateY(4px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-
 
 .link-list li a {
     text-decoration: none;
@@ -81,7 +84,10 @@ h1 {
 
     .link-list li {
         padding: 15px 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.5); /* Deeper shadow with 50% opacity */
+
     }
+    
 
     .link-list li a {
         font-size: 16px;
@@ -89,10 +95,10 @@ h1 {
 }
 
 .no-select {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none;   /* Safari */
-    -khtml-user-select: none;    /* Konqueror HTML */
-    -moz-user-select: none;      /* Old versions of Firefox */
-    -ms-user-select: none;       /* Internet Explorer/Edge */
-    user-select: none;           /* Non-prefixed version, currently supported by Chrome, Opera, and Firefox */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
