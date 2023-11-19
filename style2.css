@@ -41,12 +41,16 @@ h1 {
 .link-list li {
     background-color: white;
     color: #333;
-    margin: 10px 0;
+    margin: 20px 0; /* Keeps the space between items */
     padding: 15px 30px;
     border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: all 0.1s ease; /* Add transition for smooth effect */
+    transition: all 0.1s ease;
+    box-shadow: 0 10px 0 black; /* Thicker solid black shadow */
+
 }
+
+
+
 
 .link-list li:active {
     transform: translateY(4px); /* Moves the button down */
